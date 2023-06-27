@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0 100px;
+    margin: 0 auto;
+    max-width: 1440px;
+    & ul {
+        display: flex;
+        gap: 57px;
+        list-style: none;
+        font-size: 24px;
+        & a {
+            text-decoration: none;
+            color: #FF6060;
+        }
+    }
+}
