@@ -4,6 +4,8 @@
     grid-column-gap: 60px;
     grid-row-gap: 50px;
     padding: 56px 150px 93px 150px;
+    max-width: 1440px;
+    margin: 0 auto;
         & article {
             position: relative;
             height: 340px;
