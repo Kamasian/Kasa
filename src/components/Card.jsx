@@ -6,7 +6,7 @@ export default function Card() {
     return (
         <section className="cardsContainer">
             {data.map((location, index) => (
-                <Link to={"/fiche-logement" + location.id}
+                <Link to={"/fiche-logement/" + location.id}
                 key={index + "" + location.id}>
                     <article>
                         <img src={location.cover}

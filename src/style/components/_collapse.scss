@@ -1,0 +1,26 @@
+.collapse {
+    font-size: 24px;
+    color: white;
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 15px;
+    margin: 0 auto;
+    max-width: 1020px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.collapsible-content {
+    color: #FF6060;
+    background-color: #F6F6F6;
+    margin: -5px auto 0 auto;
+    max-width: 1020px;
+    border-radius: 0 0 5px 5px;
+    animation: loadContent 1000ms;
+}
+    
+.collapsible-content.open {
+    padding: 35px 30px 15px 15px;
+}

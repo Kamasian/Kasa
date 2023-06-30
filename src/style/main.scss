@@ -1,6 +1,10 @@
 @import "./base/reset";
 @import "./base/typography";
+@import "./utils/keyframes";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./components/banner";
-@import "./components/card"
+@import "./components/card";
+@import "./components/collapse";
+@import "./pages/error";
+@import "./pages/about";

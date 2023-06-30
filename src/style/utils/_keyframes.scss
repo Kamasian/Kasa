@@ -1,0 +1,11 @@
+@keyframes loadContent {
+    from {
+        transform: scaleY(0%);
+        transform-origin: top;
+    }
+    to {
+        transform: scaleY(100%);
+        transform-origin: top;
+
+    }
+}
