@@ -7,12 +7,11 @@ export default function Card() {
         <section className="cardsContainer">
             {data.map((location, index) => (
                 <Link to={"/fiche-logement/" + location.id}
-                key={index + "" + location.id}>
+                    key={index + "" + location.id}>
                     <article>
                         <img src={location.cover}
-                        alt={location.title}
-                        />
-                    <h2>{location.title}</h2>
+                            alt={location.title} />
+                        <h2>{location.title}</h2>
                     </article>
                 </Link>
             ))}

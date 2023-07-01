@@ -1,11 +1,15 @@
 @keyframes loadContent {
-    from {
-        transform: scaleY(0%);
+    0% {
+        transform: translateY(-100px);
         transform-origin: top;
+        opacity: 0;
     }
-    to {
-        transform: scaleY(100%);
+    10% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
         transform-origin: top;
-
+        opacity: 1;
     }
 }

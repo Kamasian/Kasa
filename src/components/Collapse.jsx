@@ -7,18 +7,17 @@ export default function Collaspe({title, content}) {
     const contentRef = useRef(null)
 
     const handleToggleCollapse = () => {
-        setIsOpen(!isOpen);
-    };
+        setIsOpen(!isOpen)
+    }
 
     return (
         <div>
             <div
-            onClick={handleToggleCollapse}
-            className={`collapse ${isOpen ? "open" : ""}`}>
+                onClick={handleToggleCollapse}
+                className={`collapse ${isOpen ? "open" : ""}`}>
                 <p>{title}</p>
-                <img
-                    src={isOpen ? arrow_up : arrow_down}
-                    alt={isOpen ? "fermer" : "ouvrir"}/>
+                <img src={isOpen ? arrow_up : arrow_down}
+                    alt={isOpen ? "fermer" : "ouvrir"} />
             </div>
         {isOpen && (
             <div

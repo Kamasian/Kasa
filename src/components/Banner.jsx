@@ -8,7 +8,8 @@ export default function Banner() {
 
     return (
         <section className="banner">
-            <img src={location.pathname === "/" ? bannerHome : bannerAbout} alt="Bannière" />
+            <img src={location.pathname === "/" ? bannerHome : bannerAbout}
+                alt="Bannière" />
             {location.pathname === "/" ? <h1>Chez vous, partout et ailleurs</h1> : ""}
         </section>
     )
