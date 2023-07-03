@@ -1,6 +1,8 @@
 .descriptionAccommodation {
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
     height: 415px;
+    width: 100%;
+    max-width: 1240px;
     & .imageAccommodation {
         width: 100%;
         height: 415px;
@@ -21,6 +23,25 @@
         }
         & img {
             cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .descriptionAccommodation {
+        height: 255px;
+        & .imageAccommodation {
+            height: 255px;
+        }
+        & div {
+            top: -140px;
+            & p {
+                bottom: -100px;
+            }
+            & img {
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }

@@ -7,7 +7,8 @@ export default function Banner() {
     const location = useLocation()
 
     return (
-        <section className="banner">
+        <section
+            className={`banner ${location.pathname === "/" ? "" : "heightAboutBanner"}`}>
             <img src={location.pathname === "/" ? bannerHome : bannerAbout}
                 alt="Bannière" />
             {location.pathname === "/" ? <h1>Chez vous, partout et ailleurs</h1> : ""}

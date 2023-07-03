@@ -8,9 +8,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 5px 10px 5px 15px;
-        margin: 0 auto;
-        max-width: 1020px;
-        width: 100%;
         border-radius: 5px;
         position: relative;
         z-index: 1;
@@ -49,9 +46,38 @@
         background-color: #F6F6F6;
         margin: -5px auto 0 auto;
         border-radius: 0 0 5px 5px;
-        animation: loadContent 600ms both;
+        animation: loadContent 400ms both;
     }
     & .collapsible-content.open {
         padding: 35px 30px 15px 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutCollapse {
+        & .collapse {
+            font-size: 13px;
+            padding: 0 10px;
+            border-radius: 7px;
+        }
+        & .collapsible-content {
+            & p {
+                font-size: 12px;
+            }
+        }
+        & .collapsible-content.open {
+            padding-top: 20px;
+        }
+    }
+    .accommodationCollapse {
+        & .collapse {
+            font-size: 13px;
+            padding: 0 10px;
+        }
+        & .collapsible-content {
+            & p {
+                font-size: 12px;
+            }
+        }
     }
 }
