@@ -3,7 +3,7 @@
         font-size: 24px;
         font-weight: 500;
         color: white;
-        background-color: #FF6060;
+        background-color: $primaryColor;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,7 +14,7 @@
         cursor: pointer;
     }
     & .collapsible-content {
-        color: #FF6060;
+        color: $primaryColor;
         background-color: #F6F6F6;
         margin: -5px auto 0 auto;
         max-width: 1240px;
@@ -31,7 +31,7 @@
         font-size: 18px;
         font-weight: 500;
         color: white;
-        background-color: #FF6060;
+        background-color: $primaryColor;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -42,7 +42,7 @@
         cursor: pointer;
     }
     & .collapsible-content {
-        color: #FF6060;
+        color: $primaryColor;
         background-color: #F6F6F6;
         margin: -5px auto 0 auto;
         border-radius: 0 0 5px 5px;

@@ -8,7 +8,7 @@
     & .titleLocationHostStars {
         display: flex;
         justify-content: space-between;
-        color: #FF6060;
+        color: $primaryColor;
         margin-bottom: 24px;
         & .titleLocation {
             display: flex;
@@ -30,7 +30,7 @@
             }
             & li {
                 color: white;
-                background-color: #FF6060;
+                background-color: $primaryColor;
                 min-width: 115px;
                 text-align: center;
                 font-size: 14px;
