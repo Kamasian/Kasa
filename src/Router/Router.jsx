@@ -8,10 +8,11 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 export default function Router() {
+
     return (
         <BrowserRouter>
             <Header />
-            <Routes>
+                <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/a-propos" element={<About />} />
                 <Route path="/fiche-logement/:id" element={<Accommodation />} />

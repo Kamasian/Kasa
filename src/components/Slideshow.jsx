@@ -1,4 +1,5 @@
-import React, { useState} from "react"
+import React, { useState } from "react"
+import PropTypes from "prop-types"
 import arrowLeft from "../assets/arrow_left.png"
 import arrowRight from "../assets/arrow_right.png"
 
@@ -34,4 +35,8 @@ export default function Slideshow({imagesList}) {
             )}
         </div>
     )
+}
+
+Slideshow.propTypes = {
+    imagesList: PropTypes.arrayOf(PropTypes.string).isRequired,
 }

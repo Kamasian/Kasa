@@ -1,17 +1,33 @@
 import React from "react"
-import { useLocation } from "react-router-dom"
-import bannerHome from "../assets/home_pic.jpg"
-import bannerAbout from "../assets/about_pic.jpg"
+import PropTypes from "prop-types"
 
-export default function Banner() {
-    const location = useLocation()
+const bannerImages = {
+    "/": {
+        image: require("../assets/home_pic.jpg"),
+        text: "Chez vous, partout et ailleurs",
+    },
+    "/a-propos": {
+        image: require("../assets/about_pic.jpg"),
+        text: "",
+    },
+}
+
+export default function Banner({ location }) {
+    const currentPath = location.pathname
+    const { image, text } = bannerImages[currentPath]
 
     return (
         <section
-            className={`banner ${location.pathname === "/" ? "" : "heightAboutBanner"}`}>
-            <img src={location.pathname === "/" ? bannerHome : bannerAbout}
+            className={`banner ${currentPath === "/" ? "" : "heightAboutBanner"}`}>
+            <img src={image}
                 alt="Bannière" />
-            {location.pathname === "/" ? <h1>Chez vous, partout et ailleurs</h1> : ""}
+            {currentPath === "/" && <h1>{text}</h1>}
         </section>
     )
+}
+
+Banner.propTypes = {
+    location: PropTypes.shape({
+        pathname: PropTypes.string.isRequired,
+    }).isRequired,
 }

@@ -1,12 +1,23 @@
 import React from "react"
+import { useLocation } from "react-router-dom"
 import Banner from "../components/Banner"
 import Card from "../components/Card"
+import data from "../data/data.json"
 
 export default function Home() {
+    const location = useLocation()
+
     return (
         <div>
-            <Banner />
-            <Card />
+            <Banner
+                location={location} />
+            <section className="cardsContainer">
+                {data.map((location, index) => (
+                    <Card
+                        location={location}
+                        index={index} />
+            ))}
+            </section>
         </div>
     )
 }

@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react"
+import PropTypes from "prop-types"
 import arrow_up from "../assets/arrow_up.png"
 import arrow_down from "../assets/arrow_down.png"
 
-export default function Collaspe({title, content}) {
+export default function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
     const contentRef = useRef(null)
 
@@ -16,7 +17,7 @@ export default function Collaspe({title, content}) {
                 onClick={handleToggleCollapse}
                 className={`collapse ${isOpen ? "open" : ""}`}>
                 <p>{title}</p>
-                <img src={isOpen ? arrow_up : arrow_down}
+                <img src={isOpen ? arrow_down : arrow_up}
                     alt={isOpen ? "fermer" : "ouvrir"} />
             </div>
         {isOpen && (
@@ -28,4 +29,9 @@ export default function Collaspe({title, content}) {
         )}
         </div>
     )
+}
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
 }
