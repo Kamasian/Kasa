@@ -15,7 +15,7 @@ export default function Home() {
                 {data.map((location, index) => (
                     <Card
                         location={location}
-                        index={index} />
+                        key={index} />
             ))}
             </section>
         </div>

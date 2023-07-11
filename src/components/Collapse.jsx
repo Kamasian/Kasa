@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react"
-import PropTypes from "prop-types"
 import arrow_up from "../assets/arrow_up.png"
 import arrow_down from "../assets/arrow_down.png"
 
@@ -24,14 +23,9 @@ export default function Collapse({ title, content }) {
             <div
                 ref={contentRef}
                 className={`collapsible-content ${isOpen ? "open" : ""}`}>
-                <p>{content}</p>
+                    <ul>{content}</ul>
             </div>
         )}
         </div>
     )
-}
-
-Collapse.propTypes = {
-    title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
 }

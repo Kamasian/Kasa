@@ -14,11 +14,13 @@
     & h1 {
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateY(-50%);
+        text-align: center;
         color: white;
         font-size: 48px;
         font-weight: 500;
+        width: 100%;
+        padding: 0 50px;
     }
 }
 
@@ -32,9 +34,9 @@
         }
         & h1 {
             font-size: 24px;
-            padding-left: 70px;
-            width: 290px;
-            left: 30%;
+            width: 265px;
+            padding: 0 25px;
+            text-align: start;
         }
     }
     .heightAboutBanner {
